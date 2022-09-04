@@ -1,7 +1,7 @@
 {
   "name": "mini-piece-table",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.1.0",
+  "description": "mini piece table ts",
   "main": "./lib/index.ems.js",
   "module": "./lib/index.ems.js",
   "types": "./lib/index.d.ts",
@@ -16,7 +16,20 @@
   "files": [
     "lib"
   ],
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JokerLHF/piece-table.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JokerLHF/piece-table/issues"
+  },
+  "homepage": "https://github.com/JokerLHF/piece-table#readme",
+  "keywords": [
+    "text",
+    "editor",
+    "piece",
+    "table"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
