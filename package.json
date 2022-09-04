@@ -1,0 +1,44 @@
+{
+  "name": "mini-piece-table",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/index.ems.js",
+  "module": "./lib/index.ems.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -cw",
+    "lint": "eslint --ext .js,.ts --quiet ./src",
+    "lint:fix": "pnpm run lint --fix",
+    "test": "jest",
+    "test:debug": "node --inspect node_modules/jest/bin/jest.js --runInBand"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-typescript": "^8.4.0",
+    "@types/jest": "^28.1.8",
+    "@typescript-eslint/eslint-plugin": "^5.35.1",
+    "@typescript-eslint/parser": "^5.35.1",
+    "eslint": "^8.23.0",
+    "eslint-plugin-jest": "^27.0.1",
+    "husky": "^8.0.1",
+    "jest": "^28.0.0",
+    "lint-staged": "^13.0.3",
+    "rollup": "^2.78.1",
+    "ts-jest": "^28.0.8",
+    "tslib": "^2.4.0",
+    "typescript": "4.6.2"
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts}": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}
